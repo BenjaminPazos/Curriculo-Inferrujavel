@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo-Início</title>
+    <link rel="shortcut icon" href="imagens/iconic-r2-d2-star-wars-robot-vdpn4du7scidqt97.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <style>
+        .fonte {
+            font-family: "Orbitron", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400px;
+            font-style: normal;
+        }
+
+        body {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2% 0;
+            background-image: url(imagens/photo-1520034475321-cbe63696469a.avif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            animation: moverFundo 20s linear infinite;
+        }
+
+        @keyframes moverFundo {
+            0% {
+                background-position: 0% 0%;
+            }
+
+            100% {
+                background-position: 100% 100%;
+            }
+        }
+
+        .main {
+            background: linear-gradient(to left,
+
+                    rgb(122, 170, 206),
+                    rgb(156, 213, 255),
+                    rgb(247, 248, 240));
+            border-radius: 2%;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+
+        section {
+            margin: 50px;
+            color: rgb(53, 88, 114);
+
+        }
+
+        section:not(.final) {
+            border-bottom: 2px solid rgb(53, 88, 114);
+
+        }
+
+        i {
+            transition: transform 0.2s;
+        }
+
+        i:hover:not(.icone-grande) {
+            transform: scale(1.3) rotate(10deg);
+        }
+
+        i.icone-grande {
+            font-size: 50px;
+            transition: 0.3s;
+        }
+
+        i.icone-grande:hover {
+            transform: scale(2.0) rotate(-20deg);
+        }
+
+
+        a {
+            color: rgb(133, 72, 255);
+        }
+
+        ol>li {
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid rgb(53, 88, 114);
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: rgb(122, 170, 206);
+            color: white;
+        }
+
+        tr:hover {
+            background-color: rgba(0, 150, 255, 0.1);
+        }
+
+        img {
+            transition: 0.3s;
+
+        }
+
+        img:hover {
+            filter: drop-shadow(0 0 5px blue);
+
+        }
+
+        nav ul {
+            font-family: "Orbitron", sans-serif;
+            gap: 20px;
+
+            padding-top: 30px;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav a {
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            font-size: 20px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <main class="main">
+        <section class="final">
+            <nav>
+                <ul>
+                    <li><a href="#1">Experiencias</a></li>
+                    <li><a href="#2" class="ativo">Espacionaves</a></li>
+                    <li><a href="#3" class="inicio">Highlights</a></li>
+                    <li><a href="#4" class="Voltar">Voltar Curriculo</a></li>
+                </ul>
+            </nav>
+
+        </section>
+
+        <section id="1" class="final">
+            <h1 class="fonte">Experiencias Profissionais <i class="fa-solid fa-user-astronaut"></i></h1>
+            <table>
+                <tr>
+                    <th class="fonte">Cargo</th>
+                    <th class="fonte">Responsável por / Serviço</th>
+                    <th class="fonte">Periodo</th>
+                    <th class="fonte">Principais Atividades</th>
+
+                </tr>
+
+                <tr>
+                    <td>Droid Astromecânico</td>
+                    <td>República / Aliança</td>
+                    <td><i class="fa-solid fa-explosion"></i> Guerras Clônicas – Guerra Civil Galáctica</td>
+                    <td>Manutenção de naves, suporte técnico em missões, reparos em voo</td>
+
+                </tr>
+
+                <tr>
+                    <td>Assistente Técnico de Voo</td>
+                    <td><i class="fa-solid fa-jedi"></i> Anakin Skywalker</td>
+                    <td><i class="fa-solid fa-explosion"></i> Guerras Clônicas</td>
+                    <td>Apoio em combate, monitoramento de sistemas, ajustes em tempo real</td>
+                </tr>
+
+                <tr>
+                    <td>Unidade de Suporte Estratégico</td>
+                    <td><i class="fa-solid fa-jedi"></i> Luke Skywalker </td>
+                    <td><i class="fa-solid fa-explosion"></i> Guerra Civil Galáctica</td>
+                    <td>Navegação, transporte de dados, auxílio em missões críticas</td>
+                </tr>
+                <tr>
+                    <td>Especialista em Sistemas e Segurança</td>
+                    <td>Frota Rebelde</td>
+                    <td><i class="fa-solid fa-explosion"></i> Guerra Civil Galáctica</td>
+                    <td>Acesso e desbloqueio de sistemas protegidos, análise de dados e suporte em infiltrações</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="2">
+            <h1 class="fonte">Experiencias com espacionaves <i class="fa-brands fa-space-awesome"></i></h1>
+            <h2 class="fonte">Espacionaves operadas e auxiliadas:</h2>
+            <figure>
+                <img src="imagens/Naboo_Royal_Starship_SWE.webp" width="200px">
+                <figcaption>Naboo Royal Starship (Nave da Rainha Amidala)</figcaption>
+
+                <img src="imagens/Xwing-SWB.webp" width="200px">
+                <figcaption>X-wing starfighter (Luke Skywalker)
+                </figcaption>
+
+                <img src="imagens/AnakinsDelta7B-TCW.webp" width="200px">
+                <figcaption>Delta-7 Aethersprite-class light interceptor (Anakin Skywalker)
+
+            </figure>
+        </section>
+        <section id="3">
+            <h1 class="fonte">Highlights | R2-D2 <i class="fas fa-gamepad"></i></h1>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JLmOteqmDYc?si=-o6IAtvFs7swyAl0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <section id="4" class="final">
+            <a href="index.html"><i class="fa-regular fa-circle-left icone-grande"></i></a>
+        </section>
+    </main>
+</body>
+
+</html>
