@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo-Início</title>
+    <link rel="shortcut icon" href="imagens/iconic-r2-d2-star-wars-robot-vdpn4du7scidqt97.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <style>
+        .fonte_titulo {
+            font-family: "Orbitron", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400px;
+            font-style: normal;
+        }
+
+        body {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2% 0;
+            background-image: url(imagens/photo-1520034475321-cbe63696469a.avif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            animation: moverFundo 20s linear infinite;
+        }
+
+        @keyframes moverFundo {
+            0% {
+                background-position: 0% 0%;
+            }
+
+            100% {
+                background-position: 100% 100%;
+            }
+        }
+
+        .main {
+            background: linear-gradient(to left,
+
+                    rgb(122, 170, 206),
+                    rgb(156, 213, 255),
+                    rgb(247, 248, 240));
+            border-radius: 2%;
+            padding-bottom: 20px;
+        }
+
+        section {
+            margin: 50px;
+            color: rgb(53, 88, 114);
+
+        }
+
+        section:not(.final) {
+            border-bottom: 2px solid rgb(53, 88, 114);
+
+        }
+
+        .imagem {
+
+            transition: 0.3s;
+
+        }
+
+        .imagem:hover {
+            animation: flutuar 3s ease-in-out infinite;
+            filter: drop-shadow(0 0 5px blue);
+        }
+
+        @keyframes flutuar {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        i {
+            transition: transform 0.2s;
+        }
+
+        i:hover {
+            transform: scale(1.3) rotate(10deg);
+        }
+
+        a {
+            color: rgb(133, 72, 255);
+        }
+
+        ol>li {
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            font-family: "Orbitron", sans-serif;
+            gap: 20px;
+        
+            padding-top: 30px;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        nav a{
+            transition: 0.3s;
+        }
+
+        nav a:hover{
+            font-size: 20px;
+        }
+
+        
+    </style>
+
+
+</head>
+
+<body>
+    <main class="main">
+
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#Perfil">Perfil</a></li>
+                    <li><a href="#Competencias" class="ativo">Competencias</a></li>
+                    <li><a href="#Formação" class="inicio">Formação</a></li>
+                    <li><a href="#Experiencias" class="inicio">Experiencias</a></li>
+                    <li><a href="#Infos" class="inicio">Informações</a></li>
+                </ul>
+            </nav>
+            <img class="imagem" src="imagens/StarWars-R2D2-1024x819.png" width="300px">
+            <h1 class="fonte_titulo">R2-D2 <i class="fa-solid fa-jedi"></i></h1>
+
+        </section>
+
+        <section id="Perfil">
+            <h1 class="fonte_titulo">Perfil <i class="fa-solid fa-robot"></i></h1>
+            <p>Droid astromecânico com ampla experiência em manutenção de naves, navegação e suporte técnico em missões
+                críticas. Atuei ao lado de pilotos e oficiais, incluindo Anakin Skywalker e Luke Skywalker, oferecendo
+                soluções rápidas e eficientes em situações de risco.</p>
+            <p> Sou confiável, adaptável e especializado em reparos, análise de sistemas e comunicação técnica.</p>
+
+        </section>
+
+
+        <section id="Competencias">
+            <h1 class="fonte_titulo">Principais competencias <i class="fa-solid fa-book-journal-whills"></i></h1>
+            <ul>
+                <li>Comunicação técnica em linguagem binária e interfaces digitais.</li>
+                <li>Manutenção e reparo de naves e sistemas eletrônico.</li>
+                <li>Navegação e cálculo de rotas espaciais.</li>
+                <li>Suporte técnico em missões de alta complexidade.</li>
+            </ul>
+
+
+        </section>
+
+
+        <section id="Formmação">
+            <h1 class="fonte_titulo">Formação academica <i class="fa-solid fa-book-journal-whills"></i></h1>
+            <p>Certificação em Engenharia e Manutenção de Sistemas Astromecânicos pela <a
+                    href="https://starwars.fandom.com/wiki/Astromech_droid">Academia Técnica da República</a>,
+                Especialização em Integração e Análise de Sistemas Digitais
+                <a href="https://starwars.fandom.com/wiki/Droid">Programa de Desenvolvimento de Droids</a>
+            </p>
+        </section>
+
+
+        <section id="Experiencias">
+            <h1 class="fonte_titulo">Experiencia Profissional <i class="fa-solid fa-book-journal-whills"></i></h1>
+            <ol class="decimal">
+                <li>Droid Astromecânico – Serviço à República / Aliança Rebelde
+                    <ul>
+                        <li>Realização de manutenção e reparos em naves durante operações críticas</li>
+                        <li>Suporte técnico direto a pilotos e comandantes em missões estratégicas</li>
+                        <li>Execução de diagnósticos e resolução de falhas em sistemas de voo</li>
+                    </ul>
+                </li>
+                <li>Assistente Técnico de Voo – Serviço a Anakin Skywalker</li>
+                <ul>
+                    <li>Apoio em missões de combate e patrulha</li>
+                    <li>Monitoramento e ajuste de sistemas em tempo real</li>
+                    <li>Atuação em situações emergenciais com alta eficiência</li>
+                </ul>
+            </ol>
+            <p>
+                <i class="fa-brands fa-rebel"></i>
+                <a href="experiencia.html">Experiencias em detalhes</a>
+            </p>
+
+        </section>
+
+
+        <section id="Infos" class="final">
+            <h1 class="fonte_titulo">Contato <i class="fa-brands fa-galactic-senate"></i></h1>
+            <p><i class="fa-solid fa-location-dot"></i> Uma galáxia muito, muito distante…</p>
+            <p><i class="fa-solid fa-phone"></i> <a href="">55 D2 R2 28</a></p>
+            <p><i class="fa-solid fa-envelope"></i> <a href="">@R2-D2</p>
+
+        </section>
+
+
+    </main>
+</body>
+
+</html>
